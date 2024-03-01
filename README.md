@@ -12,7 +12,7 @@
 - Looping through Arrays: Demonstrate using foreach, for, and while loops to iterate over arrays for processing data (e.g., calculating averages, searching for elements).
 - 	Multidimensional Arrays: Introduce multidimensional arrays for structured data (e.g., tables, matrices), demonstrating how to create, access, and iterate through them.
 - 	Array Functions: Explore built-in functions like count, sort, in_array, array_merge, and others for common array operations, emphasizing their usefulness in data manipulation.
-# Forms & User Input (2-3 sessions):
+# Forms & User Input
 - HTML Forms: Briefly review HTML form elements (e.g., <input>, <select>, <textarea>) for user input and explain how to structure forms for sending data to a PHP script.
 - 	Receiving Form Data: Demonstrate accessing form data using the $_POST or $_GET superglobals, depending on the form submission method.
 - 	Form Validation & Sanitization: Emphasize the importance of validating user input to prevent security vulnerabilities (e.g., using filter_var, htmlspecialchars, regular expressions) and sanitizing data before processing it.
