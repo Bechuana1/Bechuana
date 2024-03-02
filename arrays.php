@@ -16,11 +16,34 @@ $foo = [];
 
 //initializing using custom indexes
 
-$fruit = [
-    'first' =>'pears',
-    'second' => 'grapes',
-    'third' => 'oranges'
-];
+// $fruit = [
+//     'first' =>'pears',
+//     'second' => 'grapes',
+//     'third' => 'oranges'
+// ];
 
 
-print_r($fruit);
+// foreach ($fruits as $fruit_item){
+//     echo $fruit_item . '</br>';
+// }
+
+$fruits = array('apples', 'blue berries', 'oranges');
+
+
+// array methods
+
+// echo count($fruits);
+// echo in_array('oranges', $fruits);
+array_push($array, $value);
+array_pop($array);
+array_shift($array); //removes 1st element
+array_unshift($array, $value);
+array_merge($array1, $array2);
+array_slice($array, $start, $length);
+array_keys($array);
+array_values($array);
+
+
+
+
+
