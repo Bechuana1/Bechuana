@@ -23,7 +23,7 @@
 //     echo 'Grade D';
 // }
 
-// $day  = "Mon";
+// $day  = "Sat";
 
 // switch ($day){
 //     case "Mon":
@@ -46,7 +46,7 @@
 // }
 
 
-// $is_logged_in = true;
+// $is_logged_in = false;
 // if($is_logged_in){
 //     echo 'welcome to the members area';
 // }else{
@@ -57,6 +57,7 @@
 
 // if ($username == "admin" && $password == "secret123") {
 //     // Successful login 
+//     $is_logged_in = true;
 // } else {
 //     // Display an error message
 // }
@@ -64,20 +65,42 @@
 
 // LOOPs
 
-// for($i = 0; $i < 10 ; $i++){
-//     echo $i;
+// for($a = 0; $a < 2 ; $a++){
+//     echo  '</br>';
+//     for($b = 2; $b < 4 ; $b++){
+//      echo $a;
+//      echo $b;
+     
+//  }
 // }
 
-$i = 0;
-// while($i <10){
+// $i = 0;
+// while($i <= 10){
 //     echo $i;
-//     $i++;
+//    
+//     // $i++;
 // }
 
-do{
-    echo $i;
-    $i++;
-} while ($i <10);
+
+// $i = 0;
+// do{
+//     echo $i;
+
+//      $i = $i +1;
+//     // $i++;
+
+//     echo '</br>';
+// } while ($i <5);
+
+
+
+
+
+
+
+
+
+
 
 
 

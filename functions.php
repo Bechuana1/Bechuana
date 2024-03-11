@@ -2,11 +2,21 @@
 
 // $name = 'mike';
 
-// function greet($name){
-//     echo 'hello world' . $name;
+// function greet(){
+//     echo 'hello world ' ;
 // }
 
-// //  greet('Mike');
+
+function add($a, $b){
+  // echo $a + $b;
+
+  return $a + $b;
+}
+
+
+echo  add(3,4);
+
+// greet();
 
 // var_dump($name);
 
@@ -46,21 +56,21 @@
 // }
 // else {
 //     echo  json_encode(validateUser('jonhdoe', 'invalidemail@gmail.com', 12845));
-// }
-function calculate_cart_total($items) {
-  $total = 0;
-  foreach ($items as $item) {
-    // echo $item['price']. '</br>'; 
-    $total += $item['price'] * $item['quantity'];
-  }
-  return $total;
-}
+  // // }
+  // function calculate_cart_total($items) {
+  //   $total = 0;
+  //   foreach ($items as $item) {
+  //     // echo $item['price']. '</br>'; 
+  //     $total += $item['price'] * $item['quantity'];
+  //   }
+  //   return $total;
+  // }
 
-$cart_items = [
-  ['price' => 10, 'quantity' => 2],
-  ['price' => 5, 'quantity' => 1],
-];
+  // $cart_items = [
+  //   ['price' => 10, 'quantity' => 2],
+  //   ['price' => 5, 'quantity' => 1],
+  // ];
 
-$cart_total = calculate_cart_total($cart_items);
+  // $cart_total = calculate_cart_total($cart_items);
 
-echo "Your cart total is: $" . $cart_total;
+  // echo "Your cart total is: $" . $cart_total;

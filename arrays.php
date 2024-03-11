@@ -1,10 +1,11 @@
 <?php
 
-$foo = array();
+ $foo = array("Robert", "Muli", 46);
 
 
-$foo = [];
+$bar = [];
 
+// var_dump($foo);
 
 // $fruits = array('apples', 'blue berries', 'oranges');
 
@@ -16,32 +17,40 @@ $foo = [];
 
 //initializing using custom indexes
 
-// $fruit = [
-//     'first' =>'pears',
-//     'second' => 'grapes',
-//     'third' => 'oranges'
-// ];
-
+// $
 
 // foreach ($fruits as $fruit_item){
 //     echo $fruit_item . '</br>';
 // }
 
 $fruits = array('apples', 'blue berries', 'oranges');
+$tools= ['knife', 'blender'];
+
+// array_push($fruits, "Avacado");
+// echo '</br>';
+// print_r($fruits);
+// array_unshift($fruits, "Mangoes");
+// echo '</br>';
+// print_r($fruits);
+// array_pop($fruits);
+// echo '</br>'; 
+// print_r($fruits);
+
+// array_shift($fruits);
+// echo '</br>'; 
+// print_r($fruits);
+
+print_r(array_merge($fruits, $tools));
+
+// // echo in_array('oranges', $fruits);
 
 
-// array methods
+//  //removes 1st element
 
-// echo count($fruits);
-// echo in_array('oranges', $fruits);
-array_push($array, $value);
-array_pop($array);
-array_shift($array); //removes 1st element
-array_unshift($array, $value);
-array_merge($array1, $array2);
-array_slice($array, $start, $length);
-array_keys($array);
-array_values($array);
+// array_merge($array1, $array2);
+// array_slice($array, $start, $length);
+// array_keys($array);
+// array_values($array);
 
 
 
