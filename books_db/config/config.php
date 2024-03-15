@@ -8,7 +8,7 @@ $password = "";
 $conn = mysqli_connect($host,$username,$password,$db);
 
 if ($conn){
-    echo 'connected';
+    // echo 'connected';
 session_start();
 }
 else{
