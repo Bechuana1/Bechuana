@@ -1,5 +1,6 @@
 <?php
-// require '../../config/config.php';
+require '../../config/config.php';
+
 if (!isset($_SESSION['user_id']) || !isset($_SESSION['username'])) {
     // If user is not logged in, redirect to the login page 
     header("Location: ../../auth/login.html");
@@ -55,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-// mysqli_close($conn);
+mysqli_close($conn);
 ?>
 
 <!DOCTYPE html>
@@ -119,6 +120,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
             </div>
         </div>
+        <a href="../dash.php" class="justify-content-center"><button class="btn-success">Back to Dashboard</button></a>
     </div>
 </div>
 
