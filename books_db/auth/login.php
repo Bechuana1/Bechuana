@@ -40,8 +40,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           $response['success'] = "Login successful!";
 
           $_SESSION['username'] = $username;
+          $_SESSION['user_id'] = $row['user_id'];
           // You can set session variables or redirect the user to a dashboard here
-          echo $_SESSION['username'];
+        //   echo $_SESSION['username'];
+        header("location: ../main_dash/dash.php");
+        exit;
+
         } else {
           $errors[] = "Invalid username or password.";
         }

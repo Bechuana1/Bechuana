@@ -41,6 +41,7 @@ if (!isset($password) || empty($password)) {
         $responce['errors'][] = "Registration failed: " . mysqli_error($conn);
       } else {
         $responce['success'] = "Registration successful!";
+        header("location: ./login.html");
       }
       mysqli_stmt_close($stmt);
     }
