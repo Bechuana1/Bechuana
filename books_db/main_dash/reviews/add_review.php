@@ -1,8 +1,8 @@
 <?php
+require_once '../../config/config.php';
 
 if (!isset($_SESSION['user_id']) || !isset($_SESSION['username'])) {
-    // If user is not logged in, redirect to the login page or perform other actions
-    // For example, redirect to login page
+    // If user is not logged in, redirect to the login page
     header("Location: ../../auth/login.html");
     exit; // Stop further execution
 }
@@ -103,6 +103,7 @@ mysqli_close($conn);
                 </div>
             </div>
         </div>
+        <a href="../dash.php" class="justify-content-center"><button class="btn-success">Back to Dashboard</button></a>
     </div>
 </div>
 
