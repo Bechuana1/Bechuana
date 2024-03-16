@@ -1,13 +1,13 @@
 <?php
+require_once '../../config/config.php';
 
 if (!isset($_SESSION['user_id']) || !isset($_SESSION['username'])) {
-    // If user is not logged in, redirect to the login page or perform other actions
-    // For example, redirect to login page
+    // If user is not logged in, redirect to the login page
     header("Location: ../../auth/login.html");
     exit; // Stop further execution
 }
 
-require_once '../config/config.php';
+
 
 $errors = [];
 
@@ -61,6 +61,9 @@ if ($result) {
         </div>
     </div>
 </div>
+<a href="../dash.php" class="justify-content-center"><button class="btn btn-success">Back to Dashboard</button></a>
+<a href="../authors/add_author.php" class="justify-content-center"><button class="btn btn-primary">Add New Author</button></a>
+
 
 <!-- Bootstrap JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
